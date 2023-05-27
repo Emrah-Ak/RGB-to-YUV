@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RGB renk uzayını YUV ' a Dönüştürme/1.0.0": {
+        "runtime": {
+          "RGB renk uzayını YUV ' a Dönüştürme.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RGB renk uzayını YUV ' a Dönüştürme/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\bin\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.exe
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\bin\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.deps.json
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\bin\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.runtimeconfig.json
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\bin\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.runtimeconfig.dev.json
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\bin\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.dll
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\bin\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.pdb
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.csproj.AssemblyReference.cache
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB_renk_uzayını_YUV___a_Dönüştürme.Form1.resources
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.csproj.GenerateResource.cache
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.AssemblyInfoInputs.cache
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.AssemblyInfo.cs
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.csproj.CoreCompileInputs.cache
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.dll
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.pdb
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB renk uzayını YUV ' a Dönüştürme.genruntimeconfig.cache
+C:\Users\cadd\source\repos\RGB renk uzayını YUV ' a Dönüştürme\RGB renk uzayını YUV ' a Dönüştürme\obj\Debug\netcoreapp3.1\RGB_renk_uzayını_YUV___a_Dönüştürme.Properties.Resources.resources
