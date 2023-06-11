@@ -17,15 +17,18 @@
    göstererek şifrelemek tabi dilendiklerinde fotoğrafı veya resmi asıl haline getirmek.
 
 
-
-
    Form üzerine araç kutusundan 2 tane picturebox ekleyelim 
  birinci picturebox seçecğimiz resim için kullanılacak ikincisi dönüştürtüğümüz resmi gösterecek.
  yine araç kutusundan 2 tane button ekleyeceğiz birincisine piksel adını vereceğiz burada resim piksellerini
  bulup oradan YUV renk uzayına dönüşüm işlemi yapılacaktır ikincisi ise dönüştürdüğümüz resimi kaydetmemizi sağlayacaktır.
  bunların dışında 3 tane label ekleyeeğiz bunları da yine araç kutusundan bu labellar bizim resim üzerinde 
  bulduğumuz RGB piksel değerlerini bize gösterecek ek olarak pictureboxlarda gösterceğimiz resmin picturebox
- sığması için sizemode dan stretchımage seçebilirsiniz.
+ sığması için sizemode dan stretchımage seçebilirsiniz.ni 
+
+     
+      Yeni eklemeler yaptığımız uygulamamıza göster,şifrele özelliklerini ekledik bundan sonra uygulamamızda
+      şifrelediğimiz veya başka bir formata çevirdiğimiz fotoğrafları listeleyebilmek ve kolayca belirleyebilmek
+      için gri, renkli , şifreli olarak listeleyebilirsiniz daha sonra sil ve güüncelleme eklenecektir. 
 
 kod kısmında ise ilk önce hangi tür resimleri seçeceğimizi belirteceğiz
             
@@ -63,11 +66,66 @@ tek tek okuyabicek gezecek  şekilde satır ve sutunlarını ayarlaycağız
                 this.Resim2.Image.Save(sft.FileName, ImageFormat.Jpeg);
             }
 
-     
-     kaydet buttonu üzerinden yapacığımız bu işlemde renk uzayını değiştirdiğimiz picturebox2 de görüntülenecek
-     olan resimi kayıt işlemini yapıyoruz yalnız burada ImageFormatı kullanabilmemiz için 'System.Drawing.Imaging;'
-     eklememiz gerekiyor 
 
-     Bunlara ek olarak silme işlemi resmi şifreleme işlemi gibi başka işlemlerden ekleyebiliriz veya 
-     başka renk uzaylarına dönüşümler de deneyebiliriz.
+          kaydet buttonu üzerinden yapacığımız bu işlemde renk uzayını değiştirdiğimiz picturebox2 de görüntülenecek
+         olan resimi kayıt işlemini yapıyoruz yalnız burada ImageFormatı kullanabilmemiz için 'System.Drawing.Imaging;'
+         eklememiz gerekiyor
+
+
+            private void Göster_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                textBox1.Text = "gri";
+                Resim1.ImageLocation = "jellyfish.jpg";
+            }
+
+
+            bu kısımda combobox listeleme ve textbox da belirlediğimiz gri seçeneğini seçtiğiniz de 
+            uygulama dosyasına yüklediğimiz gri bir resim açılacaktır combobox'ın en ilk satırında gözükecektir.
+           
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                textBox1.Text = "renkli";
+                Resim1.ImageLocation = "penguins.jpg";
+            } 
+
+            Burada ise renkli resimler için olan kısım.
+
+            else if (comboBox1.SelectedIndex == 3)
+            {
+                textBox1.Text = "Şifreli";
+                Resim1.ImageLocation = "Tulips";
+            }
+
+            Bu kısım da ise şifrelediğimiz fotoğraflar kullanımı için.
+
+                x = y = boyut / 2;
+                        if (i + x >= Genişlik)
+                        {
+                            x = Genişlik - i - 1;
+                        }
+                        if (j + y >= Yükseklik)
+                        {
+                            y = Yükseklik - j - 1;
+                        }
+                        var Şifre = Orjinal.GetPixel(i + x, j + y);
+
+                        for (var w = i; w < i + boyut && w < Genişlik; w++)
+                        {
+                            for (var t = j; t < j + boyut && t < Yükseklik; t++)
+                            {
+                                piksel.SetPixel(w, t, Şifre);
+                            }
+
+              Daha önce yaptığımız satır ve sütun saydırma işlemini burada da yaptık fakat orada ki amacımız
+              fotoğrafı renk kanallarını ve formatını değiştirmekti. Burada ki amaç fotoğrafın piksellerini 
+              büyültüp hiç alakasız hale getirmektir uygulamayı çalıştırıp seçtiğiniz herhangi bir fotoğrafı
+              şifreli hale getirebiliriz bir sonraki denememiz şifreli olan fotoğrafı aslına döndürmek 
+              olacaktır burada picturebox2 de şifreli olan fotoğrafı kayıt edebilirsiniz.
+      
+
+         
+
+
 

@@ -48,7 +48,7 @@ namespace RGB_renk_uzayını_YUV___a_Dönüştürme
                     double U = (-0.148 * piksel.R) + (-0.291 * piksel.G) + (0.439 * piksel.B) + 128;
                     double V = (0.439 * piksel.R) + (-0.368 * piksel.G) + (-0.071 * piksel.B) + 128;
 
-                    Color hedefpiksel = Color.FromArgb(piksel.A, (int)Y, (int)Y, (int)Y);
+                    Color hedefpiksel = Color.FromArgb(piksel.A, (int)Y, (int)U, (int)V);
 
 
                     yenigoruntu.SetPixel(sutun, satır, hedefpiksel);
@@ -73,8 +73,67 @@ namespace RGB_renk_uzayını_YUV___a_Dönüştürme
                 this.Resim2.Image.Save(sft.FileName, ImageFormat.Jpeg);
             }
         }
-    
 
+        private void Göster_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                textBox1.Text = "gri";
+                Resim1.ImageLocation = "jellyfish.jpg";
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                textBox1.Text = "renkli";
+                Resim1.ImageLocation = "penguins.jpg";
+            }
 
+            else if (comboBox1.SelectedIndex == 3)
+            {
+                textBox1.Text = "Şifreli";
+                Resim1.ImageLocation = "Tulips";
+            }
+        }
+
+        private void Şifrele_Click(object sender, EventArgs e)
+        {
+            {
+                int x, y;
+                var boyut = 1024;
+                var Orjinal = new Bitmap(Resim1.Image);
+                var Genişlik = Orjinal.Width;
+                var Yükseklik = Orjinal.Height;
+                var piksel = new Bitmap(Genişlik, Yükseklik);
+
+                for (var i = 0; i < Genişlik; i += boyut)
+                {
+                    for (var j = 0; j < Yükseklik; j += boyut)
+                    {
+                        x = y = boyut / 2;
+                        if (i + x >= Genişlik)
+                        {
+                            x = Genişlik - i - 1;
+                        }
+                        if (j + y >= Yükseklik)
+                        {
+                            y = Yükseklik - j - 1;
+                        }
+                        var Şifre = Orjinal.GetPixel(i + x, j + y);
+
+                        for (var w = i; w < i + boyut && w < Genişlik; w++)
+                        {
+                            for (var t = j; t < j + boyut && t < Yükseklik; t++)
+                            {
+                                piksel.SetPixel(w, t, Şifre);
+                            }
+                            {
+                                Resim2.Image = piksel;
+                            }
+
+                        }
+                    }
+                }
+            }
         }
     }
+}
+    

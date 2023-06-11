@@ -36,13 +36,17 @@ namespace RGB_renk_uzayını_YUV___a_Dönüştürme
             this.Yeşil = new System.Windows.Forms.Label();
             this.Mavi = new System.Windows.Forms.Label();
             this.Kaydet = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Göster = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Şifrele = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Resim1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Resim2)).BeginInit();
             this.SuspendLayout();
             // 
             // Resim1
             // 
-            this.Resim1.Location = new System.Drawing.Point(41, 53);
+            this.Resim1.Location = new System.Drawing.Point(25, 53);
             this.Resim1.Name = "Resim1";
             this.Resim1.Size = new System.Drawing.Size(161, 182);
             this.Resim1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,7 +56,7 @@ namespace RGB_renk_uzayını_YUV___a_Dönüştürme
             // 
             // Resim2
             // 
-            this.Resim2.Location = new System.Drawing.Point(294, 53);
+            this.Resim2.Location = new System.Drawing.Point(252, 53);
             this.Resim2.Name = "Resim2";
             this.Resim2.Size = new System.Drawing.Size(156, 182);
             this.Resim2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,11 +110,55 @@ namespace RGB_renk_uzayını_YUV___a_Dönüştürme
             this.Kaydet.UseVisualStyleBackColor = true;
             this.Kaydet.Click += new System.EventHandler(this.Kaydet_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "gri",
+            "renkli",
+            "Şifreli"});
+            this.comboBox1.Location = new System.Drawing.Point(25, 278);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(161, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // Göster
+            // 
+            this.Göster.Location = new System.Drawing.Point(498, 241);
+            this.Göster.Name = "Göster";
+            this.Göster.Size = new System.Drawing.Size(56, 21);
+            this.Göster.TabIndex = 8;
+            this.Göster.Text = "Göster";
+            this.Göster.UseVisualStyleBackColor = true;
+            this.Göster.Click += new System.EventHandler(this.Göster_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(25, 321);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 89);
+            this.textBox1.TabIndex = 9;
+            // 
+            // Şifrele
+            // 
+            this.Şifrele.Location = new System.Drawing.Point(497, 278);
+            this.Şifrele.Name = "Şifrele";
+            this.Şifrele.Size = new System.Drawing.Size(57, 21);
+            this.Şifrele.TabIndex = 10;
+            this.Şifrele.Text = "Şifrele";
+            this.Şifrele.UseVisualStyleBackColor = true;
+            this.Şifrele.Click += new System.EventHandler(this.Şifrele_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 382);
+            this.ClientSize = new System.Drawing.Size(810, 422);
+            this.Controls.Add(this.Şifrele);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Göster);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Kaydet);
             this.Controls.Add(this.Mavi);
             this.Controls.Add(this.Yeşil);
@@ -136,6 +184,10 @@ namespace RGB_renk_uzayını_YUV___a_Dönüştürme
         private System.Windows.Forms.Label Yeşil;
         private System.Windows.Forms.Label Mavi;
         private System.Windows.Forms.Button Kaydet;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button Göster;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Şifrele;
     }
 }
 
